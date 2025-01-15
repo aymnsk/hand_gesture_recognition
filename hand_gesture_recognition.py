@@ -3,6 +3,7 @@ import numpy as np
 
 def hand_gesture_recognition():
     cap = cv2.VideoCapture(0)
+    # cap =cv2.VideoCapture('http://192.168.0.101:8080/video') for mobile 
     if not cap.isOpened():
         print("Error: Webcam not accessible!")
         return
